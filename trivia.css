@@ -1,0 +1,58 @@
+body {
+    background-color: #7f730a;
+    display: flex;
+    flex-direction: column;
+  }
+
+/*header's style*/
+#nbaheader {
+  height: 400px;
+  background: url(https://i.ytimg.com/vi/6hixEDiI5Dw/maxresdefault.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+}
+
+/*main section's style*/
+main {
+  border: 1px solid black;
+}
+
+/*question, button, input's section*/
+
+/*class that holds question text and start button*/
+.currentQuestion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+
+/*question will be shown here when user clicks "startButton" button*/
+#questionText {
+  font-family: 'Bangers', cursive;
+  font-size: 50px;
+}
+
+#startButton {
+  width: 80px;
+  font-size: 100px;
+  margin-top: 10px;
+}
+
+/*input box that contains input*/
+.inputBox {
+  display: flex;
+  justify-content: center;
+  margin: 250px auto;
+}
+
+/*input*/
+#userInput {
+    color: black;
+    width: 50%;
+    font-family: 'Nunito', sans-serif;
+    font-size: 25px;
+    height: 50px;
+}
