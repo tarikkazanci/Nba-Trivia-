@@ -1,65 +1,112 @@
 body {
     background-color: #7f730a;
-    display: flex;
-    flex-direction: column;
-  }
+}
 
-/*header's style*/
+/*HEADER*/
+
 #nbaheader {
-  height: 400px;
-  background: url(https://i.ytimg.com/vi/6hixEDiI5Dw/maxresdefault.jpg);
-  background-size: contain;
+  height: 350px;
+  background: url(http://i52.tinypic.com/2h7qwk8.jpg);
+  background-size: 80% 100%;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: black;
 }
 
-/*main section's style*/
-main {
-  border: 1px solid black;
-}
-
-/*question, button, input's section*/
+/*MAIN*/
 
 /*class that holds question text and start button*/
-.currentQuestion {
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 10px;
 }
 
+h1 {
+  font-family: 'Exo', sans-serif;
+  font-size: 50px;
+  margin: 15px auto;
+  color: #473838;
+}
+
+h3 {
+  font-family: 'Exo', sans-serif;
+  font-size: 40px;
+  color: #473838;
+}
+
+/*TIMER AND REMAINING Q'S DIV*/
+.q-timer{
+  display: inline-flex;
+  position: relative;
+}
+
+/*Question Section's Div */
+.questionSection {
+  width: 300px;
+}
+
+#q-left {
+  font-size: 30px;
+  color: #473838;
+  width: 100%;
+}
+
+/*displaying remaining question*/
+#remainingQuestion {
+padding-left: 95px;
+width: 100%;
+}
+
+
+/*Timer Section's Div*/
+.timerSection {
+    width: 300px;
+    margin-left: 750px;
+}
+
+#timer {
+  font-size: 30px;
+  color: #473838;
+}
+
+/*displaying remaining time*/
+#remainingTime {
+padding-left: 70px;
+}
+
+
 /*question will be shown here when user clicks "startButton" button*/
 #questionText {
   font-family: 'Bangers', cursive;
   font-size: 50px;
+  margin-top: -10px;
 }
 
 #startButton {
+  margin-top: 5px;
   font-size: 20px;
-  margin-top: 10px;
   height: 50px;
   width: 120px;
   background-color: rgb(202, 202, 202);
   font-family: 'Chau Philomene One', sans-serif;
 }
 
-/*input box that contains input*/
+/*input box div that contains input and submit button*/
 .inputBox {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 250px auto;
+  margin: 100px auto;
+  width: 100%;
 }
 
 /*input*/
 #userInput {
-    color: black;
-    width: 60%;
+    width: 70%;
     font-family: 'Nunito', sans-serif;
     font-size: 25px;
     height: 50px;
-
 }
 
 #submitButton {
@@ -69,4 +116,45 @@ main {
   background-color: rgb(202, 202, 202);
   margin-top: 30px;
   font-family: 'Chau Philomene One', sans-serif;
+}
+
+
+/*FOOTER*/
+
+footer {
+  height: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Checking user's and correct answer's div*/
+.answer-check {
+  display: flex;
+}
+
+/*User Answer text*/
+#usersAnswer {
+  font-family: 'Exo', sans-serif;
+  font-size: 25px;
+  color: #473838;
+  margin-right: 50px;
+}
+
+li {
+  font-size: 25px;
+  color: black;
+}
+
+/*li:first-letter{
+   text-transform: capitalize;
+}*/
+
+/*Correct Answer text*/
+#correctAnswer {
+  font-family: 'Exo', sans-serif;
+  font-size: 25px;
+  color: #473838;
+  margin-left: 50px;
 }

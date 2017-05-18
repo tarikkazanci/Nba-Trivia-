@@ -1,42 +1,62 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="trivia.css">
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Luckiest+Guy|Sigmar+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One" rel="stylesheet">
-    <title>TRIVIA</title>
-  </head>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="trivia.css">
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Luckiest+Guy|Sigmar+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Chau+Philomene+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+  <title> NBA TRIVIA CHALLENGE</title>
+</head>
 
-  <body>
-    <!-- contains "NBA TRIVIA "header  -->
-      <header>
-          <div id="nbaheader"></div>
-      </header>
+<body>
 
-      <!-- main section -->
-      <main>
-         <!-- QUESTIONS AND USER'S ANSWER'S SECTION -->
-         <div class="questionsAnswers">
+  <header>
+    <div id="nbaheader"></div>
+  </header>
 
-             <div class="currentQuestion">
-                 <h2 id="questionText">CLICK START TO PLAY!</h2>
-                 <input id="startButton" type="button" value="START">
-             </div>
+  <!-- main section -->
+  <main>
+    <h1>WELCOME TO NBA TRIVIA CHALLENGE!</h1>
+    <h3>Are you ready to test your knowledge about NBA?<h3>
 
-             <div class="inputBox">
-                 <input id="userInput" type="text" placeholder="Type an answer here">
-                 <input id="submitButton" type="button" value="SUBMIT">
-             </div>
+ <div class="q-timer">
+      <div class="questionSection">
+        <div id="q-left">QUESTIONS LEFT</div>
+        <div id="remainingQuestion">8</div>
+      </div>
 
-         </div>
-      </main>
+      <div class="timerSection">
+        <div id="timer">TIME REMAINING</div>
+        <div id="remainingTime">200</div>
+      </div>
+ </div>
 
+      <h2 id="questionText">CLICK START TO PLAY!</h2>
+      <input id="startButton" type="button" value="START">
 
+      <div class="inputBox">
+        <input id="userInput" type="text" placeholder="Type an answer here">
+        <input id="submitButton" type="button" value="SUBMIT">
+      </div>
+    </main>
 
+    <footer>
+      <div class="answer-check">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="trivia.js"></script>
+        <div id="usersAnswer">USER ANSWER
+          <ul>
+          </ul>
+        </div>
+
+        <div id="correctAnswer">CORRECT ANSWER</div>
+          <ul>
+
+          </ul>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="trivia.js"></script>
   </body>
-</html>
+  </html>
