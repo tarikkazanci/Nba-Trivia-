@@ -1,5 +1,6 @@
 // $(document).ready(function(){
 
+//Another option would be to put these in an object
 // QUESTIONS AND ANSWERS
 var questions = {
   nba: [
@@ -19,6 +20,12 @@ var answers = {
 }
 
 // SELECT ELEMENTS
+//Putting these variables in an object can create less global variables
+/* var buttons {
+  startButton: $("#startButton"),
+  submitButton = $("#submitButton")
+}*/
+//buttons.startButton
 
 // select question section
 var changeQuestion = $("#questionText")
@@ -74,7 +81,7 @@ submitButton.click(function() {
   }
 })
 
-
+//The submit type in html also allows you to use the keystroke enter
 // Key "ENTER PRESS" event
 input.keypress(function(event) {
   var inputVal = $("#userInput").val().toLowerCase()
@@ -102,7 +109,7 @@ input.keypress(function(event) {
     // addCorrectAnswer();
   }
 })
-
+//use localStorage to keep information present after refreshing the browser
 function addUserAnswer(answer) {
   var userAnswer = $(`<li>${answer}</li>`);
   $("#usersAnswer ul").append(userAnswer);
