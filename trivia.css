@@ -54,8 +54,11 @@ h3 {
 
 /*displaying remaining question*/
 #remainingQuestion {
-padding-left: 95px;
-width: 100%;
+padding-left: 90px;
+width: 45%;
+border: 2px solid black;
+background-color: black;
+color: white;
 }
 
 
@@ -72,7 +75,11 @@ width: 100%;
 
 /*displaying remaining time*/
 #remainingTime {
-padding-left: 70px;
+padding-left: 80px;
+width: 47%;
+border: 2px solid black;
+background-color: black;
+color: white;
 }
 
 
@@ -127,6 +134,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 80px;
 }
 
 /*Checking user's and correct answer's div*/
