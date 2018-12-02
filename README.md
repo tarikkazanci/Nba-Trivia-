@@ -1,5 +1,3 @@
-GA WDI PROJECT 1
-
 Nba-Trivia
 
 This is a question-answer trivia game built on HTML5, CSS and Javascript. Nba-Trivia tests your knowledge about some NBA questions. Answer each question, test your NBA knowledge and have fun!
